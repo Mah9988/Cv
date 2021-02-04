@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+*{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+/* Start closer */
+.closer i{
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 15px 45px 0 0;
+}
+/* End closer */
+
+/* Start Header */
+
+.page .header{
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.header p{
+    color: #9f9f9f;
+    margin-bottom: 5px;
+}
+.header h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.loader {  
+    width:100px; 
+    margin:15px auto 0;
+    border-radius:10px;
+    border:4px solid transparent;
+    position:relative;
+    padding:1px;
+  }
+  .loader:before {
+    content:'';
+    border:1px solid #009e66; 
+    border-radius:10px;
+    position:absolute;
+    top:-4px; 
+    right:-4px; 
+    bottom:-4px; 
+    left:-4px;
+  }
+  .loader .loaderBar { 
+    position:absolute;
+    border-radius:10px;
+    top:0;
+    right:100%;
+    bottom:0;
+    left:0;
+    background:#009e66; 
+    width:0;
+    animation:borealisBar 1.2s linear infinite;
+  }
+  
+  @keyframes borealisBar {
+    0% {
+      left:0%;
+      right:100%;
+      width:0%;
+    }
+    10% {
+      left:0%;
+      right:75%;
+      width:25%;
+    }
+    90% {
+      right:0%;
+      left:75%;
+      width:25%;
+    }
+    100% {
+      left:100%;
+      right:0%;
+      width:0%;
+    }
+  }
+
+/* End Header */
+
+/* start who */
+.page .who .my-image{
+    padding: 40px;
+    background-image: url(../images/my_image.jpeg);
+    background-size: cover;
+    background-position: 50%;
+    max-height: 45vh;
+} 
+@media only screen and (max-width: 992px){
+    .page .who .my-image{
+        margin: 10px 90px 30px 35px ;
+        height: 180px;
+        border-radius: 100%;
+        padding: 150px !important;
+    }
+    
+}
+.page .who .right{
+    padding-left: 40px;
+}
+.page .who .right h4{
+    color: #009e66;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+}
+.page .who .right h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+.page .who .right p{
+    color: #9f9f9f;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.h-r {
+    width: 100%;
+    height: 3px;
+    background-color: hsla(0,0%,100%,.08);
+}
+.page .who .right .contact{
+    text-align: left;
+}
+.page .who .right .contact p{
+    margin: 0;
+}
+.page .who .right .contact .first{
+    color: #fff;
+    font-size: 20px;
+}
+.page .who .right .contact .second{
+    color: #9f9f9f;
+    font-size: 18px;
+}
+.page .who .right .contact .cv{
+    margin-top: 15px;
+}
+.page .who .right .contact .cv button{
+    background-color: #009e66;
+    outline: none;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 40px;
+    line-height: 1px;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+}
+.page .who .right .contact ul{
+    margin-top: 30px;    
+}
+.page .who .right .contact li{
+    display: inline;
+}
+.page .who .right .contact i{
+    font-size: 25px;
+    color: #fff;
+    margin: 0 8px;
+}
+.page .who .right .contact i:hover{
+    color: #009e66;
+}
+/*End section who */
+
+/* Start section services */
+
+.Services{
+    margin-top: 70px;
+}
+.Services p{
+    color: #aaaaaa;
+    font-size: 16px;
+}
+.Services h1{
+    font-size: 45px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.Services .box{
+    box-shadow: 0 6px 16px rgb(0 0 0 / 20%);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.Services .box .inner-box{
+    padding: 50px;
+    margin-left: 10px;
+    background-color: #161616;
+    height: 323px;
+}
+.Services .box .inner-box:hover{
+    border: 4px solid #009e66;
+    transition: 0.2s ease-in-out ;
+}
+.Services .box .inner-box p{
+    color: #009e66;
+}
+.Services .box .inner-box h2{
+    color: #fff;
+    margin: 30px 0;
+}
+@media only screen and (max-width: 992px){
+    .Services .box .inner-box{
+        height: 400px !important;
+    }
+}
+/* End section services */ 
+

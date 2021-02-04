@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+*{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+/* Start closer */
+.closer i{
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 15px 45px 0 0;
+}
+/* End closer */
+.page .header{
+    margin-top: 50px;
+    padding-bottom: 110px;
+}
+.header p{
+    color: #9f9f9f;
+    margin-bottom: 5px;
+}
+.header h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.loader {  
+    width:100px; 
+    margin:15px auto 0;
+    border-radius:10px;
+    border:4px solid transparent;
+    position:relative;
+    padding:1px;
+  }
+  .loader:before {
+    content:'';
+    border:1px solid #009e66; 
+    border-radius:10px;
+    position:absolute;
+    top:-4px; 
+    right:-4px; 
+    bottom:-4px; 
+    left:-4px;
+  }
+  .loader .loaderBar { 
+    position:absolute;
+    border-radius:10px;
+    top:0;
+    right:100%;
+    bottom:0;
+    left:0;
+    background:#009e66; 
+    width:0;
+    animation:borealisBar 1.2s linear infinite;
+  }
+  
+  @keyframes borealisBar {
+    0% {
+      left:0%;
+      right:100%;
+      width:0%;
+    }
+    10% {
+      left:0%;
+      right:75%;
+      width:25%;
+    }
+    90% {
+      right:0%;
+      left:75%;
+      width:25%;
+    }
+    100% {
+      left:100%;
+      right:0%;
+      width:0%;
+    }
+  }
+
+/* End Header */
+
+/* Start left */
+.page .left h2{
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+.page .left .input{
+    background-color: #161616;
+    border: none;
+    border-bottom: 1px solid #161616;
+    border-radius: 0;
+    height: 44px;
+    padding: 9px 14px;
+    border-radius: 2px;
+    margin-bottom: 20px;outline: none;
+}
+.page .left .input:focus{
+    box-shadow: none;
+    background-color: #161616;
+    border-bottom: 2px solid #009e66;
+    transition: 0.2s ease-in-out;
+    color: #e6e6e6;
+    font-size: 16px;
+}
+.page .left button{
+    height: 55px;
+    background-color: #009e66;
+    outline: none;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 40px;
+    line-height: 1px;
+    color: #fff;
+    font-size: 14px;
+}
+/* End left */
+
+/* Start right */
+.page .right h2{
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+.page .right p{
+    font-size: 18px;
+    margin-bottom: 28px;
+    color: rgb(159, 159, 159);
+}
+.page .right .border-list{
+  border-right: 2px solid rgba(255, 255, 255, 0.15);
+}
+.page .right i{
+  color: #009e66;
+  margin-bottom: 35px;
+}
+.page .right .list-unstyled h6{
+  font-size: 20px;
+  color: #fff;
+}
+.page .right .list-unstyled p{
+  margin-bottom: 15px !important; 
+  font-size: 15px;
+  color: #9f9f9f; 
+}
+/* End left */
+
+.page{
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .page .right{
+    margin-top: 25px !important;
+  }
+} 
